@@ -1,39 +1,48 @@
 ### Create New Contact
-POST http://localhost:3000/api/v1/contacts
+POST http://localhost:3000/api/v1/users
 Content-Type: application/json
 
 {
-    "id":"123",
     "name":"Tita",
     "email":"Tita@gmail.com",
     "phone":"9999999999"
 }
 
 ### Create New Contact
-POST http://localhost:3000/api/v1/contacts
+POST http://localhost:3000/api/v1/users
 Content-Type: application/json
 
 {
-    "id":"1234",
-    "name":"Tita4",
-    "email":"Tita4@gmail.com",
-    "phone":"9999999998"
+    "name":"Tita2",
+    "email":"Tita2@gmail.com",
+    "phone":"9999999992"
+}
+
+### Create New Contact
+POST http://localhost:3000/api/v1/users
+Content-Type: application/json
+
+{
+    "name":"Tita3",
+    "email":"Tita3@gmail.com",
+    "phone":"9999999993"
 }
 
 ### Get All Contact
-GET http://localhost:3000/api/v1/contacts
+GET http://localhost:3000/api/v1/users
 
 ### Find User
-GET http://localhost:3000/api/v1/contacts/123
+GET http://localhost:3000/api/v1/users/2
 
 ### Updating Contact
-PUT http://localhost:3000/api/v1/contacts/123
+PUT http://localhost:3000/api/v1/users/2
 Content-Type: application/json
 
 {
-    "name":"Tita Actualizadita",
-    "phone":"900800700"
+    "name": "Tita Actualizada",
+    "email": "tita.actualizada@gmail.com",
+    "phone": "900123456"
 }
 
 ### Delete Contact
-DELETE http://localhost:3000/api/v1/contacts/123
+DELETE http://localhost:3000/api/v1/users/2

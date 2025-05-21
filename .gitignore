@@ -1,8 +1,33 @@
-node_modules
-build
-npm-debug.log
+# 🛑 Archivos y carpetas que no deben subirse a Git
+
+# Node modules
+node_modules/
+
+# Directorio de salida de TypeScript
+dist/
+
+# Archivos .env (variables sensibles)
 .env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Archivos temporales del sistema o IDE
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Cache de TypeScript (si usas incremental)
+*.tsbuildinfo
+
+# Archivos de coverage de pruebas
+coverage/
+
+# Lockfile de otras herramientas (opcional si solo usas pnpm)
 package-lock.json
-dist
-.vscode
+yarn.lock
